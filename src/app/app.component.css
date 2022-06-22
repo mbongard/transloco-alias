@@ -1,0 +1,13 @@
+a {
+  display: inline-block;
+  margin: 1rem;
+  text-decoration: none;
+  color: black;
+  background-color: lightblue;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  cursor: pointer;
+}
