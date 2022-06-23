@@ -1,1 +1,17 @@
-<h1>{{ 'module.title' | transloco }}</h1>
+test
+
+<ng-container *transloco="let m; read: 'moduleA'">
+  <h1>{{ m('aaaaaaaaaaa') | transloco }}</h1>
+</ng-container>
+
+<!--<ng-container *transloco="let m; read: 'moduleA'">-->
+<!--  <h1>{{ t('test2') }}</h1>-->
+<!--</ng-container>-->
+<!--<ng-container *transloco="let m; read: 'blubb'">-->
+<!--  <h1>{{ m + '.test' | transloco }}</h1>-->
+<!--</ng-container>-->
+<!--<h1>{{ 'moduleA.title2' | transloco }}</h1>-->
+<!--<h1>{{ 'moduleA.title3' | transloco }}</h1>-->
+
+
+<h1>{{ name + 'm.asdf' | transloco }}</h1>

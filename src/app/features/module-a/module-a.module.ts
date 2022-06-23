@@ -11,7 +11,7 @@ const loader = ['en', 'es'].reduce((acc, lang) => {
 
 @NgModule({
   declarations: [
-    ComponentAComponent
+    ComponentAComponent,
   ],
   exports: [
     ComponentAComponent
@@ -26,9 +26,10 @@ const loader = ['en', 'es'].reduce((acc, lang) => {
       provide: TRANSLOCO_SCOPE,
       useValue: {
         scope: 'moduleA',
-        alias: 'module',
+        alias: 'm',
         loader
       },
+      multi: true
     }
   ]
 })

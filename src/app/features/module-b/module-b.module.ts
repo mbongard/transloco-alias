@@ -29,6 +29,7 @@ const loader = ['en', 'es'].reduce((acc, lang) => {
         alias: 'module',
         loader
       },
+      multi: true
     }
   ]
 })
